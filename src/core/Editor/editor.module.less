@@ -1,0 +1,30 @@
+.editor {
+  display: flex;
+  height: 100%;
+  position: relative;
+  .leftPanel {
+    padding: 10px;
+    width: 400px;
+  }
+  .canvasWrapper {
+    flex: 1;
+    margin: 8px 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .canvasScrollView {
+    flex: 1;
+    overflow: auto;
+  }
+  .canvas {
+    position: relative;
+    background-color: #fff;
+    height: 100%;
+    // default is center and cause content invisible
+    transform-origin: 0 0;
+  }
+  .component {
+    width: 100%;
+    height: 100%;
+  }
+}
